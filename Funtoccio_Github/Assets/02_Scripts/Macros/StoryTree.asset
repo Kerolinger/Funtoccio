@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: StoryTree
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[{"name":"currentInteractale","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"IsInSugarRush","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"HouseIsCracked","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"OgreOnStage","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"BellIsEaten","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"MashingHouse","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"BoltStoryTree","summary":null,"pan":{"x":275.6221,"y":-184.9097},"zoom":0.275,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-584.0,"y":-211.0},"guid":"2b6128bb-cb1b-4ebb-8540-89f3ffee519e","$version":"A","$type":"Bolt.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-585.0,"y":-109.0},"guid":"25048bb0-9378-448f-9095-e4d0851b123d","$version":"A","$type":"Bolt.Update"},{"specifyFallback":false,"kind":"Graph","defaultValues":{"name":{"$content":"MashingHouse","$type":"System.String"}},"position":{"x":-509.0,"y":148.0},"guid":"91b2e528-544b-458e-a849-043302a3d4e5","$version":"A","$type":"Bolt.GetVariable","$id":"19"},{"chainable":false,"member":{"name":"Invoke","parameterTypes":[],"targetType":"GameEvent","targetTypeName":"GameEvent","$version":"A"},"defaultValues":{"target":null},"position":{"x":-330.0,"y":138.0},"guid":"e7e8ee13-800e-4f44-9ad4-ff6ff44d1af3","$version":"A","$type":"Bolt.InvokeMember","$id":"21"},{"defaultValues":{},"position":{"x":-280.0,"y":-279.0},"guid":"76785b3a-77c4-43e7-9b41-c28c8a15e67d","$version":"A","$type":"Bolt.Branch"},{"defaultValues":{},"position":{"x":-283.0,"y":-165.0},"guid":"41272db9-7383-4a07-b7d6-2100befec125","$version":"A","$type":"Bolt.Branch"},{"defaultValues":{},"position":{"x":-281.0,"y":-51.0},"guid":"17836cf0-6d7e-441d-abe6-a683224db57c","$version":"A","$type":"Bolt.Branch"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"21"},"destinationKey":"target","guid":"4e7b2830-36ae-4a64-b233-9a5248c03564","$type":"Bolt.ValueConnection"},{"position":{"xMin":-515.0,"yMin":80.0,"xMax":-184.0,"yMax":291.0},"label":"Invoking
+      a GameEvent","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"f2afd3a4-2c5a-40e3-a708-8ad75a975863","$version":"A","$type":"Ludiq.GraphGroup"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 6aca8805eca5f264f851d35e168cda6e, type: 2}
+    - {fileID: 11400000, guid: eebed445c705396468f6cae2a51818bf, type: 2}
